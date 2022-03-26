@@ -1,11 +1,11 @@
 {
   "name": "@ui-design/components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@ui-design/icons": "^0.0.1",
-    "@ui-design/themes": "^0.0.1"
+    "@ui-design/icons": "^0.0.2",
+    "@ui-design/themes": "^0.0.2"
   },
   "gitHead": "eeb0771057d7d6f49e59aef58c0cd8ab87b6cc1f"
 }
