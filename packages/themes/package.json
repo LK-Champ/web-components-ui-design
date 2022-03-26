@@ -2,5 +2,6 @@
   "name": "@ui-design/themes",
   "version": "0.0.1",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "eeb0771057d7d6f49e59aef58c0cd8ab87b6cc1f"
 }
