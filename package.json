@@ -12,7 +12,7 @@
   },
   "scripts": {
     "commit": "git cz",
-    "release": "standard-version"
+    "standard": "standard-version"
   },
   "config": {
     "commitizen": {
