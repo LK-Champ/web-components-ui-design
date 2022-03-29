@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/LK-Champ/web-components-ui-design/compare/v1.2.0...v1.3.0) (2022-03-29)
+
+
+### ✨ Features | 新功能
+
+* **其它变更:** stencil 安装 ([da9da93](https://github.com/LK-Champ/web-components-ui-design/commit/da9da933a82102b936352cf3a17f8d64fe76ee52))
+
 ## [1.2.0](https://github.com/LK-Champ/web-components-ui-design/compare/v1.1.1...v1.2.0) (2022-03-29)
 
 
