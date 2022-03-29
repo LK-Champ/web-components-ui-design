@@ -25,7 +25,7 @@
       "commit-msg": "commitlint -e -V"
     }
   },
-  "version": "1.1.1",
+  "version": "1.2.0",
   "main": ".cz-config.js",
   "dependencies": {
     "conventional-commit-types": "^3.0.0",
