@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, State } from '@stencil/core';
 import { format } from '../../utils/utils';
 
 @Component({
@@ -22,11 +22,18 @@ export class MyComponent {
    */
   @Prop() last: string;
 
+  @State() num: number = 0;
+
   private getText(): string {
     return format(this.first, this.middle, this.last);
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return (
+      <div>
+        <button onClick={() => this.num+=1}>add</button>
+        Hello, World! I'm {this.getText()}, {this.num}
+      </div>
+    );
   }
 }

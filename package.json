@@ -13,7 +13,9 @@
   },
   "scripts": {
     "commit": "git cz",
-    "release": "standard-version"
+    "release": "standard-version",
+    "start:components": "lerna run start --scope=@ui-design/components",
+    "generate:components": "lerna run generate --scope=@ui-design/components"
   },
   "config": {
     "commitizen": {
