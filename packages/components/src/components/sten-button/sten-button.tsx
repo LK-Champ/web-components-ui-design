@@ -10,7 +10,7 @@ export class StenButton {
   render() {
     return (
       <Host>
-        <slot></slot>
+        <button class="sten-button"><slot></slot></button>
       </Host>
     );
   }
