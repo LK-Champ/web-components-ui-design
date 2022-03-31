@@ -1,0 +1,6 @@
+git filter-branch -f --env-filter "
+GIT_AUTHOR_NAME='LK-Champ';
+GIT_AUTHOR_EMAIL='18375721476@sina.cn';
+GIT_COMMITTER_NAME='LK-Champ';
+GIT_COMMITTER_EMAIL='18375721476@sina.cn'
+" HEAD
