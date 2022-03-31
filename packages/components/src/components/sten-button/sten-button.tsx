@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, State, Watch,Element } from '@stencil/core';
+import { Component, Host, h, Prop, State, Watch,Element, Method } from '@stencil/core';
 
 @Component({
   tag: 'sten-button',
@@ -18,8 +18,13 @@ export class StenButton {
     console.log('The new value of num is: ', newValue);
   }
 
+  @Method()
+  async showPrompt() {
+    console.log('测试1');
+  }
+
   getListHeight(): number {
-    console.log(this.el);
+    console.log(this.el.getBoundingClientRect().height);
     return this.el.getBoundingClientRect().height;
   }
 

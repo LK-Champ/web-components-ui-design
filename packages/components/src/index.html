@@ -11,5 +11,12 @@
   <body>
     <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
     <sten-button text="text">您好</sten-button>
+    <script>
+      (async () => {
+        await customElements.whenDefined('sten-button');
+        const todoListElement = document.querySelector('sten-button');
+        await todoListElement.showPrompt();
+      })();
+    </script>
   </body>
 </html>

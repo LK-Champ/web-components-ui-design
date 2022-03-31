@@ -21,6 +21,7 @@ export namespace Components {
         "middle": string;
     }
     interface StenButton {
+        "showPrompt": () => Promise<void>;
         "text": string;
     }
 }
