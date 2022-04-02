@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, State, Watch,Element, Method } from '@stencil/core';
+import { Component, h, State, Listen } from '@stencil/core';
 
 @Component({
   tag: 'sten-button',
@@ -6,42 +6,23 @@ import { Component, Host, h, Prop, State, Watch,Element, Method } from '@stencil
   shadow: true,
 })
 export class StenButton {
-  @Prop() text: string;
-  
-  @State() num: number = 0;
+  // `isOpen` is decorated with `@State()`,
+    // changes to it will trigger a rerender
+    @State() isOpen: boolean = true;
 
-  @Element() el: HTMLElement;
+    @Listen('click', { capture: true })
+    handleClick() {
+        // whenever a click event occurs on
+        // the component, update `isOpen`,
+        // triggering the rerender
+        this.isOpen = !this.isOpen;
+    }
 
-  @Watch('num')
-  watchPropHandler(newValue: boolean, oldValue: boolean) {
-    console.log('The old value of num is: ', oldValue);
-    console.log('The new value of num is: ', newValue);
-  }
-
-  @Method()
-  async showPrompt() {
-    console.log('测试1');
-  }
-
-  getListHeight(): number {
-    console.log(this.el.getBoundingClientRect().height);
-    return this.el.getBoundingClientRect().height;
-  }
-
-  render() {
-    return (
-      <Host>
-        <button 
-          class="sten-button"
-          onClick={() => {
-            this.num += 1;
-            this.getListHeight();
-          }}
-        >
-          {this.text}{this.num}<slot></slot>
-        </button>
-      </Host>
-    );
-  }
-
+    render() {
+        return (
+          <button>
+            {this.isOpen ? "Open" : "Closed"}
+          </button>
+        );
+    }
 }

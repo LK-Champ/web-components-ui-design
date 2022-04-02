@@ -10,7 +10,7 @@ export class MyComponent {
   /**
    * The first name
    */
-  @Prop() first: string;
+  @Prop({attribute: 'last'}) first: string;
 
   /**
    * The middle name
@@ -20,7 +20,7 @@ export class MyComponent {
   /**
    * The last name
    */
-  @Prop() last: string;
+  @Prop({attribute: 'first'}) last: string;
 
   @State() num: number = 0;
 
@@ -31,7 +31,10 @@ export class MyComponent {
   render() {
     return (
       <div>
-        <button onClick={() => this.num+=1}>add</button>
+        <button onClick={() => {
+          this.num+=1;
+          this.first = `${this.num}`;
+        }}>add</button>
         Hello, World! I'm {this.getText()}, {this.num}
       </div>
     );
