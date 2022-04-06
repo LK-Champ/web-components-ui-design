@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/LK-Champ/web-components-ui-design/compare/v1.5.0...v1.6.0) (2022-04-06)
+
+
+### ✨ Features | 新功能
+
+* **组件:** svg to json ([ab6a934](https://github.com/LK-Champ/web-components-ui-design/commit/ab6a934758c0415f974917789faee56112d54639))
+
 ## [1.5.0](https://github.com/LK-Champ/web-components-ui-design/compare/v1.4.0...v1.5.0) (2022-04-04)
 
 
