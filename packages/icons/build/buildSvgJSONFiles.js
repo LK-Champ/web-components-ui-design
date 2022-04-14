@@ -1,14 +1,17 @@
 const path = require('path');
 const fs = require('fs');
 const svgo = require('svgo');
-
+const camelCase = require('camelcase');
+const prettier = require("prettier");
 const { parse, stringify } = require('svgson');
+
 // entry 
 const entryDir = path.resolve(__dirname, '../svgs');
 // outer
 const outDir = path.resolve(__dirname, '../icons');
 // esm
 const outDirEsm = path.resolve(__dirname, '../icons_esm');
+
 // svgo plugins config
 const svgoPlugins = svgo.extendDefaultPlugins([
   {
@@ -38,6 +41,8 @@ const option = {
   plugins: svgoPlugins
 };
 
+const prefix = 'icon'
+
 async function build(entry, outDir, outDirEsm, prefix, suffix) {
   // 删除文件夹
   fs.rmdirSync(outDir, { recursive: true });
@@ -52,15 +57,31 @@ async function build(entry, outDir, outDirEsm, prefix, suffix) {
   const batches = files
     .filter((f) => path.extname(f) === '.svg')
     .map(async (file) => {
-      const fileData = fs.readFileSync(`${entryDir}/${file}`, 'utf-8');
+
+      const svgFileName = path.basename(file, '.svg');
+      // 定义组件名称 加上 prefix 前缀
+      const componentName = `${prefix}${camelCase(svgFileName, { pascalCase: true })}`;
+      // 定义输出的 js 文件名称
+      const jsonFileName = `${componentName}.js`;
+      // 读取文件
+      const svgContent = fs.readFileSync(path.resolve(entryDir, file), 'utf-8');
       
-      const result = svgo.optimize(fileData, option);
-      console.log(result);
-      // SVG -> SVG json
-      const jsonSVG = await parse(fileData).then((json) => {
+      // 使用 svgo 把 svg 文件进行格式化统一
+      const formatSVG = svgo.optimize(svgContent, option);
+      // SVG 文件格式化为一个 object key-value 的形式进行值的输出
+      const JSONCode = await parse(formatSVG.data).then((json) => {
         return JSON.stringify(json, null, 2);
       });
-      return jsonSVG
+      
+      // 加上 _name 名称
+      JSONCode._name = svgFileName;
+      // 格式化代码，写入文件
+      let _JSONCode = `exports.default = ${JSON.stringify(JSONCode)}`;
+      const formattedCode = prettier.format(_JSONCode, { semi: false, parser: "babel" });
+      fs.writeFileSync(path.resolve(outDir, jsonFileName), formattedCode, 'utf-8');
+      
+      // 输出文件 和 组件名称
+      return { fileName: jsonFileName, componentName };
     });
   
   const arr = await Promise.all(batches);
@@ -68,4 +89,4 @@ async function build(entry, outDir, outDirEsm, prefix, suffix) {
   
 }
 
-build(entryDir, outDir, outDirEsm);
+build(entryDir, outDir, outDirEsm, prefix);

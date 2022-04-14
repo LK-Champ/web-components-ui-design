@@ -30,10 +30,12 @@
   "version": "1.6.0",
   "main": ".cz-config.js",
   "dependencies": {
+    "camelcase": "^6.3.0",
     "conventional-changelog-eslint": "^3.0.9",
     "conventional-commit-types": "^3.0.0",
     "cosmiconfig-typescript-loader": "^1.0.6",
     "mime-types": "^2.1.35",
+    "prettier": "^2.6.2",
     "typescript": "^4.6.3"
   },
   "repository": {

@@ -1,0 +1,75 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add camelcase
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  16.0.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/leihe/Library/Caches/Yarn/v6/npm-glob-7.1.4-aa608a2f6c577ad357e1ae5a5c26d9a8d1969255-integrity/node_modules/glob/LICENSE' -> '/Users/leihe/web-components-ui-design/node_modules/commitizen/node_modules/glob/LICENSE'
+
+npm manifest: 
+  {
+    "name": "root",
+    "private": true,
+    "devDependencies": {
+      "@commitlint/cli": "^16.2.3",
+      "commitizen": "^4.2.4",
+      "commitlint-config-cz": "^0.13.3",
+      "cz-customizable": "^6.3.0",
+      "husky": "^7.0.4",
+      "lerna": "^4.0.0",
+      "standard-version": "^9.3.2",
+      "yorkie": "^2.0.0"
+    },
+    "scripts": {
+      "commit": "git cz",
+      "release": "standard-version",
+      "start:components": "lerna run start --scope=@ui-design/components",
+      "generate:components": "lerna run generate --scope=@ui-design/components"
+    },
+    "config": {
+      "commitizen": {
+        "path": "cz-customizable"
+      }
+    },
+    "husky": {
+      "hooks": {
+        "commit-msg": "commitlint -e -V"
+      }
+    },
+    "version": "1.6.0",
+    "main": ".cz-config.js",
+    "dependencies": {
+      "conventional-changelog-eslint": "^3.0.9",
+      "conventional-commit-types": "^3.0.0",
+      "cosmiconfig-typescript-loader": "^1.0.6",
+      "mime-types": "^2.1.35",
+      "typescript": "^4.6.3"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/LK-Champ/web-components-ui-design.git"
+    },
+    "author": "LK-Champ",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/LK-Champ/web-components-ui-design/issues"
+    },
+    "homepage": "https://github.com/LK-Champ/web-components-ui-design#readme",
+    "description": ""
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
