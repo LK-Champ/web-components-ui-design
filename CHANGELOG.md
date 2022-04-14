@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/LK-Champ/web-components-ui-design/compare/v1.6.0...v1.7.0) (2022-04-14)
+
+
+### ✨ Features | 新功能
+
+* **组件:** icons ([3e9847e](https://github.com/LK-Champ/web-components-ui-design/commit/3e9847e1b01c00b0dc4200a644750c2007a78d18))
+
 ## [1.6.0](https://github.com/LK-Champ/web-components-ui-design/compare/v1.5.0...v1.6.0) (2022-04-06)
 
 
