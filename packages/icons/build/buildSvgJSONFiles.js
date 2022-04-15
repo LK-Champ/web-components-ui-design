@@ -85,7 +85,16 @@ async function build(entry, outDir, outDirEsm, prefix, suffix) {
     });
   
   const arr = await Promise.all(batches);
-  // console.log(arr[0]);
+  
+  const indexFileContent = arr
+    .map((a) => `exports.${a.componentName} = require('./${a.componentName}').default;`)
+    .join('\n');
+
+  fs.writeFileSync(
+    path.resolve(outDir, 'index.js'),
+    '/* eslint-disable @typescript-eslint/no-var-requires */' + '\n' + indexFileContent + '\n',
+    'utf-8',
+  );
   
 }
 
