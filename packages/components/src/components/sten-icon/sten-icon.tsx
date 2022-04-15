@@ -12,7 +12,7 @@ export class StenIcon {
 
   render() {
     return (
-        <Icon size="30" rotate={0} styles={{}}  color={'2878FF'} svgData={IconSvg} spin={false}></Icon>
+        <Icon size="50" rotate={0} styles={{}}  color={'rgb(180 32 32)'} svgData={IconSvg} spin={false}></Icon>
     );
   }
 }

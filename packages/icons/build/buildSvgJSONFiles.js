@@ -75,6 +75,7 @@ async function build(entry, outDir, outDirEsm, prefix, suffix) {
       
       // 加上 _name 名称
       JSONCode._name = svgFileName;
+      console.log(JSONCode);
       // 格式化代码，写入文件
       let _JSONCode = `exports.default = ${JSON.stringify(JSONCode)}`;
       const formattedCode = prettier.format(_JSONCode, { semi: false, parser: "babel" });

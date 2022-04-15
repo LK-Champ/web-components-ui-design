@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "@stencil/core": "^2.13.0",
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "svgson": "^5.2.1"
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
