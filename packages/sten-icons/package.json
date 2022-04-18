@@ -1,7 +1,7 @@
 {
-  "name": "@sten-design/icons",
+  "name": "@sten-ui-design/icons",
   "version": "1.0.4",
   "main": "index.js",
   "license": "ISC",
-  "gitHead": "8fc710230ed775840770b5525fdd5acd2f5f1c8a"
+  "gitHead": "a4ef7566555f419a48d303ab5092958ecefd0f3d"
 }
