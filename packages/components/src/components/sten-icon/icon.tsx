@@ -1,5 +1,6 @@
 import  { stringify } from "svgson";
 import { FunctionalComponent, h, Host } from '@stencil/core';
+import * as api from '@sten-design/icons';
 interface StenIconProps {
   /**
    * 尺寸，默认 20
@@ -29,6 +30,8 @@ interface StenIconProps {
 
 export const Icon: FunctionalComponent<StenIconProps> = props => {
   const {size, styles, color, rotate, spin, svgData} = props;
+
+  console.log(api);
   
   const outerStyle: any = { color };
 

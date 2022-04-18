@@ -26,6 +26,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
+    "@sten-design/icons": "^1.0.2",
     "@stencil/core": "^2.13.0",
     "classnames": "^2.3.1",
     "svgson": "^5.2.1"
