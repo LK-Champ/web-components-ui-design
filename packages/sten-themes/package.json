@@ -1,6 +1,6 @@
 {
   "name": "@sten-ui-design/themes",
-  "version": "1.0.4-alpha.0",
+  "version": "1.0.4",
   "main": "index.js",
   "license": "ISC",
   "gitHead": "a4ef7566555f419a48d303ab5092958ecefd0f3d"
