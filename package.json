@@ -6,5 +6,16 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LK-Champ/web-components-ui-design.git"
+  },
+  "author": "LK-Champ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LK-Champ/web-components-ui-design/issues"
+  },
+  "homepage": "https://github.com/LK-Champ/web-components-ui-design#readme",
+  "description": ""
 }
