@@ -2,6 +2,6 @@
   "name": "@sten-design/themes",
   "version": "1.0.3",
   "main": "index.js",
-  "license": "MIT",
-  "gitHead": "6346f514951a85e82a004004799773a7c73c953d"
+  "license": "ISC",
+  "gitHead": "8fc710230ed775840770b5525fdd5acd2f5f1c8a"
 }
