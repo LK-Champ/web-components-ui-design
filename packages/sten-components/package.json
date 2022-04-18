@@ -1,0 +1,15 @@
+{
+  "name": "@sten-design/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "dependencies": {
+    "@sten-design/icons": "1.0.0",
+    "@sten-design/theme": "1.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

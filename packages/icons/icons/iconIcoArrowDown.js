@@ -1,2 +1,0 @@
-exports.default =
-  '{\n  "name": "svg",\n  "type": "element",\n  "value": "",\n  "attributes": {\n    "viewBox": "0 0 16 16",\n    "xmlns": "http://www.w3.org/2000/svg"\n  },\n  "children": [\n    {\n      "name": "path",\n      "type": "element",\n      "value": "",\n      "attributes": {\n        "d": "M8 9.19 4.03 5.22a.75.75 0 0 0-1.06 1.06l4.5 4.5a.75.75 0 0 0 1.06 0l4.5-4.5a.75.75 0 0 0-1.06-1.06L8 9.19Z",\n        "fill": "currentColor",\n        "fill-rule": "evenodd"\n      },\n      "children": []\n    }\n  ]\n}'
