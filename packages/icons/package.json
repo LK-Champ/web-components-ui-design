@@ -1,12 +1,12 @@
 {
   "name": "@ui-design/icons",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "icons/index.js",
   "module": "icons_esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build/buildSvgJSONFiles.js"
+    "build": "node build/buildSvgToJSONFiles.js"
   },
   "author": "",
   "license": "ISC",
