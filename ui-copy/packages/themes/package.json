@@ -1,0 +1,28 @@
+{
+  "name": "@ui-design/themes",
+  "version": "0.0.4",
+  "main": "lib/index.css",
+  "style": "lib/index.css",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": "git+https://github.com/LK-Champ/web-components-ui-design.git",
+  "author": "LK-Champ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LK-Champ/web-components-ui-design/issues"
+  },
+  "homepage": "https://github.com/LK-Champ/web-components-ui-design#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-dart-sass": "^1.0.2"
+  },
+  "description": "",
+  "gitHead": "f0e747bb7fc731ce96ff8ab0b983d39551657a14"
+}
