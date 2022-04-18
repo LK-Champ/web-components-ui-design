@@ -4,7 +4,6 @@ const svgo = require('svgo');
 const camelCase = require('camelcase');
 const prettier = require("prettier");
 const { parse, stringify } = require('svgson');
-
 // entry 
 const entryDir = path.resolve(__dirname, '../svgs');
 // outer
