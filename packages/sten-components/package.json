@@ -1,13 +1,13 @@
 {
   "name": "@sten-design/components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo 'Error: no test specified' && exit 1"
   },
   "dependencies": {
-    "@sten-design/icons": "^1.0.1",
+    "@sten-design/icons": "^1.0.2",
     "@sten-design/themes": "1.0.0"
   },
   "author": "",
