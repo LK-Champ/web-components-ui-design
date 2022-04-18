@@ -23,5 +23,6 @@
     "gulp-cssmin": "^0.1.7",
     "gulp-dart-sass": "^1.0.2"
   },
-  "description": ""
+  "description": "",
+  "gitHead": "f0e747bb7fc731ce96ff8ab0b983d39551657a14"
 }
